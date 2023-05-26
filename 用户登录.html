@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif; /* 设置字体 */
+        background-color: #f2f2f2; /* 设置背景色 */
+    }
+
+    h1 {
+        text-align: center; /* 居中对齐标题 */
+        margin-top: 50px; /* 调整顶部距离 */
+    }
+
+    form {
+        width: 800px; /* 设置表单宽度 */
+        height: 600px;
+        margin: 0 auto; /* 水平居中 */
+        background-color: #fff; /* 设置背景色 */
+        border: 1px solid #ccc; /* 添加边框 */
+        padding: 20px; /* 添加内边距 */
+    }
+
+    label {
+        display: inline-block; /* 将标签变成块元素，以便在其后面添加换行符 */
+        width: 100px; /* 设置标签宽度 */
+        font-weight: bold; /* 加粗标签字体 */
+    }
+
+    input[type="text"], input[type="password"], input[type="submit"] {
+        padding: 10px; /* 添加内边距 */
+        margin-bottom: 10px; /* 调整底部间距 */
+    }
+
+    input[type="submit"] {
+        background-color: #0099ff; /* 设置背景色 */
+        color: #fff; /* 设置字体颜色 */
+        border: none; /* 移除边框 */
+        cursor: pointer; /* 添加指针样式 */
+        padding: 10px 200px; /* 添加内边距 */
+        border-radius: 5px; /* 添加圆角 */
+        /*text-align: center;*/
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0066cc; /* 设置悬停背景色 */
+    }
+        .opacity40{
+            opacity: 40%;
+        }
+        .img{
+            background-image: url("../登录页面.jpg");
+        }
+        .column{
+            flex-direction: column;
+        }
+        .flex1{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to our website!</h1>
+
+<!--<div style="display:flex ;  justify-content:center;align-items:center>;width:100%;height:100vh;"width:100%; class="column" style="display: flex; align-items: center"<div style="display:flex ; flex-direction: column; justify-content:center;align-items:center;height:100vh;" class="column">-->
+    <form action="login.php" method="POST" class="opacity40 img">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" ><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" ><br><br>
+    <input type="submit" value="Login">
+    </form>
+
+</body>
+</html>
+<!--style=""class="flex1 column"class="flex1 column"</div>-->
